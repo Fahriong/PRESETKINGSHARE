@@ -1,12 +1,12 @@
 {
-  "name": "PRESETREND File Share/Sharing Bot",
+  "name": "PRESETKING File Share/Sharing Bot",
   "description": "bagikan file anda melalui tautan singkat",
   "keywords": [
     "telegram",
     "file",
     "sharing"
   ],
-  "repository": "https://github.com/fahriwetv08/filesharelinkpreset",
+  "repository": "https://github.com/Fahriong/PRESETKINGSHARE",
   "logo": "https://telegra.ph/file/752e597281857206e1a9e.jpg",
   "env": {
     "TG_BOT_TOKEN": {
@@ -45,6 +45,11 @@
       "description": "A space separated list of user_ids of Admins, they can only create links",
       "value": "",
       "required": false
+    },
+     "UPSTREAM_REPO": {
+       "description": "REPO KAMU",
+       "value": "https://github.com/Fahriong/PRESETKINGSHARE",
+       "required": true
     },
      "PROTECT_CONTENT": {
       "description": "Protect contents from getting forwarded",
