@@ -90,7 +90,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🧐 Tentang Aku 🧐", callback_data = "about"),
+                    InlineKeyboardButton("👤 Tentang Saya 👤", callback_data = "about"),
                     InlineKeyboardButton("🔒 Tutup 🔒", callback_data = "close")
                 ]
             ]
@@ -114,7 +114,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Join Channel",
+                "Masuk Ke Channel",
                 url = client.invitelink)
         ]
     ]
@@ -179,13 +179,13 @@ async def send_text(client: Bot, message: Message):
                 pass
             total += 1
         
-        status = f"""<b><u>Broadcast Completed</u>
+        status = f"""<b><u>Siaran Selesai</u>
 
-Total Users: <code>{total}</code>
-Successful: <code>{successful}</code>
-Blocked Users: <code>{blocked}</code>
-Deleted Accounts: <code>{deleted}</code>
-Unsuccessful: <code>{unsuccessful}</code></b>"""
+Total Pengguna: <code>{total}</code>
+Berhasil: <code>{successful}</code>
+Pengguna Diblokir: <code>{blocked}</code>
+Akun Terhapus: <code>{deleted}</code>
+Gagal: <code>{unsuccessful}</code></b>"""
         
         return await pls_wait.edit(status)
 
