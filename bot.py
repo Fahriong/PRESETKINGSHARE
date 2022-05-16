@@ -30,8 +30,8 @@ class Bot(Client):
                 self.invitelink = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
-                self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
-                self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL}")
+                self.LOGGER(__name__).warning("Bot tidak dapat Mengekspor tautan Undangan dari Sub Saluran Paksa!")
+                self.LOGGER(__name__).warning(f"Silakan periksa kembali nilai FORCE_SUB_CHANNEL dan Pastikan Bot adalah Admin di saluran dengan Undang Pengguna melalui Izin Tautan, Nilai Sub Saluran Kekuatan Saat Ini: {FORCE_SUB_CHANNEL}")
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/CodeXBotzSupport for support")
                 sys.exit()
         try:
@@ -42,11 +42,11 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
-            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/CodeXBotzSupport for support")
+            self.LOGGER(__name__).info("\nBot berhenti. Bergabunglah dengan https://t.me/presetking untuk mendapatkan dukungan")
             sys.exit()
 
         self.set_parse_mode("html")
-        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by 𝑷𝒓𝒆𝒔𝒆𝒕𝒓𝒆𝒏𝒅 𝕏 𝐁𝐎𝐓\nhttps://t.me/presetrend")
+        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by PRESETKING 𝕏 𝐁𝐎𝐓\nhttps://t.me/presetking")
         self.username = usr_bot_me.username
 
     async def stop(self, *args):
